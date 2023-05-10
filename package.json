@@ -1,0 +1,19 @@
+{
+  "name": "ag-charts-bug",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "shadow-cljs": "2.23.3"
+  },
+  "scripts": {
+    "dev": "shadow-cljs watch app",
+    "preview": "shadow-cljs release app && http-server -p 8080 public"
+  },
+  "dependencies": {
+    "ag-charts-community": "^7.3.0",
+    "ag-charts-react": "^7.3.0",
+    "http-server": "^14.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

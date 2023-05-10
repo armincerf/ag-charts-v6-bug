@@ -1,0 +1,19 @@
+;; shadow-cljs configuration
+{:source-paths ["src"]
+
+ :dependencies []
+
+ :dev-http {8080 "public"}
+
+ :builds
+ {:app
+  {:target :browser
+   :output-dir "public/js"
+   :compiler-options {:elide-asserts false
+                      :optimizations :simple
+                      :pretty-print true
+                      :pseudo-names true
+                      :source-map true}
+   :asset-path "/js"
+   :modules {:main {:init-fn myapp/init}}}}}
+
