@@ -9,6 +9,8 @@
  {:app
   {:target :browser
    :output-dir "public/js"
+   :js-options {:js-provider :external
+                :external-index "target/index.js"}
    :compiler-options {:elide-asserts false
                       :optimizations :simple
                       :pretty-print true
